@@ -3,11 +3,11 @@ def get_first_name_of_season_winner(data, season)
       people.each do |category, result|
         if result == "Winner"
           return people["name"].split(' ').first
-        end 
+        end
       end
     end
   end
-end 
+end
  # code here
 
 
