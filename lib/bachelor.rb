@@ -14,7 +14,7 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season, array|
     array.each do |person|
-      if person[:occupation] == occupation
+      if person["occupation"] == occupation
         return person["name"]
       end
     end
@@ -29,8 +29,8 @@ end
 def get_occupation(data, hometown)
   data.each do |season, contestants|
     contestants.each do |contestant|
-      if contestant[:hometown] == hometown
-        return contestant[:occupation]
+      if contestant["hometown"] == hometown
+        return contestant["occupation"]
       end
     end
   end # code here
